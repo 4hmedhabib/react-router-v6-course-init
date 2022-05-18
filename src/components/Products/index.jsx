@@ -1,7 +1,48 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Navbar from "../Navbar";
 
-const Products = () => {
-  return <div>Products</div>;
+const Products = (props) => {
+  return (
+    <Fragment>
+      <Navbar />
+      <main className="flex py-5 px-3 mt-28 justify-center items-center font-ubuntu tracking-wide">
+        <div className="w-full sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl min-h-28 bg-white rounded-lg px-5 py-5 shadow-md border border-gray-100 shadow-gray-300">
+          <h1 className="text-2xl text-center font-bold tracking-widest font-ubuntu text-slate-500 capitalize">
+            ea molestias quasi exercitationem repellat qui ipsa sit aut
+          </h1>
+          <div className="flex justify-center items-center my-2">
+            <h5 className="font-ubuntu capitalize text-gray-500">
+              <span className="bg-slate-500 px-2 py-1 rounded-full text-white text-xs">
+                Author
+              </span>
+              <span> : Ahmed Habib</span>
+            </h5>
+          </div>
+          <div>
+            <p className="mt-3 mb-2 font-ubuntu tracking-wider text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellat, minus. Qui praesentium ratione, expedita dolores
+              molestiae quisquam quidem iure assumenda placeat cupiditate?
+              Sapiente iusto ut similique rem explicabo tenetur minima?
+            </p>
+          </div>
+          <div className="my-3">
+            <h5 className="">
+              <span className="bg-slate-500 px-2 py-1 text-xs text-white tracking-wider rounded-lg mr-2">
+                Date Posted:
+              </span>
+              <span className="text-gray-500">2020-20-20</span>
+            </h5>
+          </div>
+          <div className="mb-2">
+            <span className="hover:text-blue-500 hover:text-lg">
+              <a href="#">View More</a>
+            </span>
+          </div>
+        </div>
+      </main>
+    </Fragment>
+  );
 };
 
 export default Products;
